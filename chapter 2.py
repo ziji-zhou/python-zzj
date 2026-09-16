@@ -9,3 +9,21 @@ else:
     print('继续沉淀')
 
 
+#Day--2  while循环 ,break, continue
+while True:
+    my_lover=input('Who do you love? ')
+    if my_lover!='zcyn':
+        print('Think carefully!')
+        continue
+    print('Are you together?')
+    answer=input('请输入 yes or no ')    
+    if answer=='no':
+        print('坚定，努力，相信自己！！！')      
+        break                        # 每个条件要退出循环，都要加上break,否则会一直循环下去
+    elif answer=='yes':
+        print('Forever!!!')
+        break
+    
+    
+
+
