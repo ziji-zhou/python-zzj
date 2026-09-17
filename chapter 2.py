@@ -23,7 +23,21 @@ while True:
     elif answer=='yes':
         print('Forever!!!')
         break
-    
+
+
+#Day--3  for循环，range函数, random模块, sys模块 
+import random, sys
+for i in range(100,0,-1):
+    print(520)
+while True:                  # while True:可无限循环取，range :循环有限次取
+    I=random.randint(1,100)
+    Love=random.randint(1,100)
+    You=random.randint(1,100)
+    if I+Love+You==5+2+0:
+        print('zcyn!!!')
+        sys.exit()
+        
+
     
 
 
