@@ -1,4 +1,4 @@
-#Day--4  综合小项目--剪刀石头布
+#Day--4  综合小项目--剪刀石头布（三局两胜）
 import random, sys
 print('我们来玩，剪刀，石头，布！三局两胜！')
 win=0
@@ -6,15 +6,16 @@ python_win=0                  # 初始赋值要写在循环外！写到循环内
 for game in range(1,4):
    python=random.randint(1,3)
    player=input('paper,scissors,rock 出！')
-   if player=='paper':
+   if   player=='paper':
         player=3
    elif player=='scissors':
         player=1 
    elif player=='rock':
         player=2   
-   if python==player:
+   if python==player:        # 在一个循环中，多个if语句，每个条件都会独立判断！
         win=win+0
-        print('这局平局！') 
+        python_win=python_win+0
+        print('这局平局！')
    elif (player==1 and python==3) or (player==2 and python==1) or (player==3 and python==2):
         win=win+1
         python_win=python_win+0
